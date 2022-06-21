@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list line="full">
+    <ion-item>
+      <ion-label position = "floating" >username</ion-label>
+      <ion-input [(ngModel)]="username" type="text"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position = "floating" >password</ion-label>
+      <ion-input [(ngModel)]="password" type="password"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position = "floating" >firstname</ion-label>
+      <ion-input [(ngModel)]="fname" type="text"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position = "floating" >lastname</ion-label>
+      <ion-input [(ngModel)]="lname" type="text"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position = "floating" >email</ion-label>
+      <ion-input [(ngModel)]="mail" type="text"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position = "floating" >phone</ion-label>
+      <ion-input [(ngModel)]="tel" type="text"> </ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type ="button" (click)="addMember()" expand="block">ลงทะเบียน</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+</ion-content>
